@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mogra', cursive;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #0082B3;
+
+}
+
+header {
+    width: 90%;
+    height: 100px;
+    color: #f9962d;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 3px solid #ccc;
+    line-height: 100px;
+}
+
+main {
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main input,
+button {
+    width: 85%;
+    text-align: center;
+    height: 40px;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+input {
+    font-size: 20px;
+}
+
+.fecha {
+    cursor: pointer;
+}
+
+button {
+    width: 50px;
+    border: solid 2px #000;
+    background-color: #f9962d;
+    height: 30px;
+    cursor: pointer;
+}
+
+.lista {
+    width: 40%;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: grid;
+    grid-auto-rows: 80px;
+    text-align: center;
+}
+
+#error {
+    height: 65px;
+    width: 600px;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 30px;
+}
+
+h3 {
+    line-height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 3px dashed #ccc;
+    font-size: 40px;
+    color: #f9962d;
+}
+
+.newElement {
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    padding-top: 25px;
+    z-index: 1000;
+}
+
+h4,
+h5 {
+    font-size: 20px;
+    color: #e7e2e2;
+
+}
+
+
+.info,
+.delete {
+    position: absolute;
+    margin-top: 20px;
+}
+
+.info {
+    left: 80%;
+}
+
+.delete {
+    left: 90%;
+}
+
+/* Descriptions */
+
+ul {
+    background-color: #08d6d699;
+    position: relative;
+    left: 100%;
+    color: #e7e2e2;
+    border: 2px solid #f9962d;
+    /* Evita que se salga del Contenedor */
+    word-wrap: break-word;
+    width: 400px;
+    transform: translate(3px, -30%);
+    display: block;
+    height: 80px;
+    overflow-y: auto;
+}
+
+li {
+    /* border: 1px solid tomato; */
+    list-style: none;
+    padding: 20px;
+}
